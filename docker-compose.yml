@@ -4,7 +4,7 @@ services:
     image: ghcr.io/atuinsh/atuin:18.24.4
     command: start
     volumes:
-      - "/config"
+      - "./config:/config"
     ports:
       - 8888:8888
     environment:
